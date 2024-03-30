@@ -21,7 +21,7 @@ const Main = () => {
 
   useEffect(() => {
     const fetchDataFromApi = async () => {
-      const API_URL = "https://frantic-bee-garters.cyclic.app";
+      // const API_URL = "https://frantic-bee-garters.cyclic.app";
       try {
         const response = await axios.get('https://frantic-bee-garters.cyclic.app/api/data');
         console.log(response);
