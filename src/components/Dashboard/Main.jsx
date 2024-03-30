@@ -23,7 +23,8 @@ const Main = () => {
     const fetchDataFromApi = async () => {
       const API_URL = "https://frantic-bee-garters.cyclic.app";
       try {
-        const response = await axios.get(`${API_URL}/api/data`);
+        const response = await axios.get('https://frantic-bee-garters.cyclic.app/api/data');
+        console.log(response);
         setData(response.data);
       } catch (error) {
         console.error("Error fetching data:", error);
